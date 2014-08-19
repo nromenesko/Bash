@@ -1,0 +1,26 @@
+Built for Mac OSX. 
+
+Contents:
+    
+    scheduled_restart.sh
+    --------------------
+    Shell script to restart the compute. Makes sure no users are logged in 
+    before performing a restart.
+    
+    scheduled_restart.plist
+    -----------------------
+    Property list file containing restart schedule. Change the integer
+    values within the StartCalendarInterval block to set the time to restart.
+    Remove the Weekday key to increase frequency to more than once a week.
+
+    add.sh
+    ---------
+    Shell script to make install easier. Replace "USERNAME" in the src1 and 
+    src2 variables with your username. Copy the scheduled_restart script and 
+    plist to your desktop and run to install.
+
+    remove.sh
+    ----------
+    Shell script to remove the scheduled restart. 
+                
+                
